@@ -44,6 +44,7 @@
             font-size: 24px;
             font-weight: 700;
             margin: 0px;
+            letter-spacing: -1px;
         }
 
         .box-header {
@@ -69,7 +70,7 @@
             border-right: 1px solid #5BC686;
             text-align: center;
             padding: 24px;
-            display: flex; flex-direction: column; gap:24px;
+            display: flex; flex-direction: column; gap:16px;
             color: inherit; text-decoration: none;
             background-color: #DEF4E7;
         }
@@ -129,6 +130,22 @@
 
         .logo img {
             height: 48px;
+        }
+
+
+        @media (min-width: 1600px) {
+            h1 {
+                font-size: 48px;
+            }
+            h2 {
+                font-size: 32px;
+            }
+            .eyebrow {
+                font-size: 20px;
+            }
+            li {
+                font-size: 22px;
+            }
         }
 
         @media (max-width: 1100px) {
