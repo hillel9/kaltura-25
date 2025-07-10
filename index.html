@@ -126,7 +126,9 @@
             border-top: 1px solid #5BC686;
         }
 
-
+        .link-in-title {
+            cursor: pointer;
+        }
 
         .logo img {
             height: 48px;
@@ -196,7 +198,7 @@
             </a>
             <a class="box" href="demo_2.html" target="_blank">
                 <div class="box-header">
-                    <h2>Teaching, Learning, Training ​& Certification​</h2>
+                    <h2>Teaching, Learning, Training ​& <span id="link-in-title" href="demo_3_cpe.html" target="_blank">Certification​</span></h2>
                 </div>
                 <div class="sub-box">
                     <h3 class="eyebrow">Examples</h3>
@@ -279,5 +281,11 @@
         </div>
     </div>
 </body>
-
+<script>
+    document.getElementById("link-in-title").addEventListener("click", function(e) {
+      e.stopPropagation(); // Prevent the outer <a> from triggering
+      e.preventDefault();  // Just in case
+      window.open("demo_2_cpe.html", "_blank");
+    });
+  </script>
 </html>
